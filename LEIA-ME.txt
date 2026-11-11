@@ -1,0 +1,41 @@
+REDESENHO DO WEBSITE DA UnISCED — TRABALHO DE CAMPO TWeb 2026
+
+1. COMO ABRIR O WEBSITE
+- Extraia a pasta unisced-redesign.zip.
+- Abra a pasta extraída.
+- Dê duplo clique em index.html para abrir a página inicial no navegador.
+- Para uma experiência mais próxima de um servidor web, abra a pasta no Visual Studio Code e execute-a com a extensão Live Server.
+
+2. PÁGINAS
+- index.html: página inicial e navegação principal.
+- cursos.html: catálogo de cursos, com pesquisa, filtros e ordenação.
+- inscricao.html: formulário demonstrativo de inscrição.
+- styles.css: estilos, cores e adaptação para telemóveis/tablets/computadores.
+- app.js: interactividade, pesquisa, filtros, ordenação, gestão de cursos e armazenamento local.
+- assets/estudantes.png: imagem utilizada na página inicial.
+
+3. COMO TESTAR
+- Na página inicial, clique em “Cursos” para abrir o catálogo.
+- Pesquise um curso pelo nome ou use os filtros disponíveis.
+- Experimente ordenar a lista.
+- Use a opção de gestão de cursos para adicionar ou remover um curso demonstrativo.
+- Clique em “Inscrever-se” para abrir o formulário.
+- Preencha os campos obrigatórios e submeta para ver a validação e a confirmação demonstrativa.
+- Recarregue a página para verificar os dados de demonstração guardados no armazenamento local do navegador.
+- Redimensione a janela ou abra no telemóvel para testar a responsividade.
+
+4. IMPORTANTE
+Este é um protótipo académico de front-end. O formulário não envia candidaturas para a UnISCED e os dados ficam apenas no navegador (localStorage). Para inscrições reais, seria necessário integrar um servidor/API e a plataforma oficial da universidade. Confirme sempre a designação e disponibilidade dos cursos no portal oficial antes da entrega.
+
+5. PUBLICAÇÃO NA VERCEL
+- Crie uma conta em vercel.com.
+- Crie um repositório público no GitHub e carregue todos os ficheiros desta pasta, mantendo a pasta assets.
+- Na Vercel, escolha “Add New Project” e importe o repositório.
+- Como é um site estático, não precisa de comando de build; deixe o output directory como raiz (./) se solicitado.
+- Clique em Deploy e copie o endereço público para o relatório.
+
+6. GOOGLE DRIVE E RELATÓRIO
+- Carregue o código-fonte e o vídeo demonstrativo para uma pasta do Google Drive.
+- Configure o acesso conforme as instruções do docente e copie o link.
+- Inclua no relatório o link do Drive e o link público da Vercel.
+- O relatório deve ter no máximo 8 páginas, conforme o enunciado.

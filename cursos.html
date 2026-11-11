@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore e pesquise os cursos da Universidade Aberta ISCED." />
+  <meta name="theme-color" content="#102b46">
+  <title>Cursos | UnISCED</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="courses">
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="topbar"><div class="container topbar-inner"><span>Universidade Aberta ISCED · Moçambique</span><div class="topbar-links"><a href="https://salavirtual2.unisced.edu.mz/" target="_blank" rel="noopener">Sala Virtual <span aria-hidden="true">↗</span></a><a href="https://inscricoes.unisced.edu.mz/" target="_blank" rel="noopener">Portal de Inscrições <span aria-hidden="true">↗</span></a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="UnISCED - página inicial"><span class="brand-mark" aria-hidden="true">U</span><span class="brand-copy"><strong>UnISCED</strong><small>UNIVERSIDADE ABERTA ISCED</small></span></a><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button><nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a href="index.html#sobre">Sobre nós</a><a class="active" href="cursos.html" aria-current="page">Cursos</a><a href="index.html#faculdades">Faculdades</a><a href="index.html#vida-academica">Vida académica</a><a href="index.html#contactos">Contactos</a><a class="nav-cta" href="inscricao.html">Inscrever-se <span aria-hidden="true">→</span></a></nav></div></header>
+
+  <main id="conteudo">
+    <section class="page-hero"><div class="container page-hero-inner"><div><span class="eyebrow">OFERTA ACADÉMICA</span><h1>Encontre o curso<br><em>que combina consigo.</em></h1><p>Explore a oferta académica da UnISCED. Pesquise por nome, nível ou faculdade e organize os cursos de acordo com a sua preferência.</p><div class="breadcrumb"><a href="index.html">Início</a><span> / </span><span aria-current="page">Cursos</span></div></div><div class="page-hero-decoration" aria-hidden="true"><span>CURSOS</span><strong>+</strong></div></div></section>
+
+    <section class="catalog-section"><div class="container">
+      <div class="catalog-heading"><div><span class="eyebrow">CATÁLOGO DE CURSOS</span><h2>Explore as possibilidades</h2><p>Os cursos abaixo foram organizados a partir do catálogo institucional consultado para este protótipo.</p></div><a class="button button-primary" href="inscricao.html">Fazer inscrição <span aria-hidden="true">→</span></a></div>
+
+      <div class="catalog-tools">
+        <label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Pesquisar cursos</span><input id="course-search" type="search" placeholder="Pesquisar por curso, faculdade ou grau..." autocomplete="off"><kbd>⌘ K</kbd></label>
+        <label class="select-field"><span>Grau académico</span><select id="level-filter"><option value="all">Todos os níveis</option><option value="Licenciatura">Licenciatura</option><option value="Mestrado">Mestrado</option><option value="Doutoramento">Doutoramento</option><option value="Curso de curta duração">Curta duração</option></select></label>
+        <label class="select-field"><span>Faculdade</span><select id="faculty-filter"><option value="all">Todas as faculdades</option></select></label>
+        <label class="select-field sort-field"><span>Ordenar por</span><select id="sort-courses"><option value="az">Nome (A–Z)</option><option value="za">Nome (Z–A)</option><option value="level">Grau académico</option><option value="faculty">Faculdade</option></select></label>
+      </div>
+
+      <div class="catalog-status"><p id="result-count" aria-live="polite">A carregar cursos...</p><button class="clear-filters" id="clear-filters" type="button">Limpar filtros <span aria-hidden="true">↺</span></button></div>
+      <div class="catalog-layout">
+        <div class="course-grid" id="course-grid" aria-live="polite"></div>
+        <aside class="study-plan" aria-labelledby="plan-title"><div class="plan-head"><span class="plan-icon" aria-hidden="true">＋</span><div><h2 id="plan-title">O meu plano</h2><p>Guarde os cursos de interesse</p></div></div><div class="plan-counter"><strong id="plan-count">0</strong><span>cursos seleccionados</span></div><div id="saved-courses" class="saved-list"><p class="empty-plan">Ainda não adicionou cursos. Use o botão “Adicionar ao plano” num curso para começar.</p></div><a class="plan-cta" href="inscricao.html">Prosseguir para inscrição <span aria-hidden="true">→</span></a><p class="plan-note">A sua selecção fica guardada neste navegador.</p></aside>
+      </div>
+      <div class="catalog-disclaimer"><strong>Nota:</strong> Esta é uma versão demonstrativa para fins académicos. Confirme a oferta, os requisitos, os prazos e a disponibilidade de cada curso no <a href="https://unisced.edu.mz/cursos/" target="_blank" rel="noopener">catálogo oficial da UnISCED</a>.</div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-light" href="index.html"><span class="brand-mark" aria-hidden="true">U</span><span class="brand-copy"><strong>UnISCED</strong><small>UNIVERSIDADE ABERTA ISCED</small></span></a><p>Pense no Futuro. Estude na UnISCED.</p></div><div class="footer-col"><h3>Explorar</h3><a href="index.html#sobre">Sobre nós</a><a href="cursos.html">Cursos</a><a href="index.html#faculdades">Faculdades</a></div><div class="footer-col"><h3>Serviços</h3><a href="inscricao.html">Inscrições</a><a href="https://salavirtual2.unisced.edu.mz/" target="_blank" rel="noopener">Sala Virtual ↗</a><a href="https://unisced.edu.mz/faq/" target="_blank" rel="noopener">Perguntas frequentes ↗</a></div><div class="footer-col"><h3>Informação</h3><a href="https://unisced.edu.mz/cursos/" target="_blank" rel="noopener">Catálogo oficial ↗</a><a href="https://unisced.edu.mz/" target="_blank" rel="noopener">Portal oficial ↗</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> UnISCED · Protótipo académico de redesign</span><span>HTML · CSS · JavaScript</span></div></footer>
+</body>
+</html>
